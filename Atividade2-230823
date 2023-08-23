@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    int quantidade = 0, contador, soma = 0;
+    printf("Os numeros multiplos de 11 entre [300, 400] são: \n");
+    for(contador = 400; contador >= 300; contador --){
+        if (contador % 11 == 0){
+            quantidade++;
+            printf("%i° Numero: %i\n", quantidade, contador);
+        }
+        soma = soma + contador;
+        printf("Soma dos Multiplos de 11 compreendidos entre [300, 400] são: %i\n", soma);
+        
+        
+       
+    }
+    
+
+    return 0;
+}
